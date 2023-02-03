@@ -1,0 +1,20 @@
+.nav{
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* box-shadow: 5px 2px 20px 0px lightslategrey; */
+    background: linear-gradient(to left, transparent, #31d0cc, #75e7e4);
+    border-radius: 15px 0 0 0;
+    padding: 20px 0;
+  }
+  .nav a{
+    display: block;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    color: #146666;
+    text-shadow: 2px 3px 6px #cccccc;
+    font-weight: 800;
+    /* font-style: italic; */
+    /* letter-spacing: 1.5px; */
+  }

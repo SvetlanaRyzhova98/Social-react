@@ -1,0 +1,17 @@
+.header {
+  grid-area: h;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 5px 2px 20px 0px lightslategrey;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(54, 220, 215),
+    #0d6f75
+  );
+}
+.header img {
+  height: 100%;
+  transform: rotate(180deg);
+  filter: invert(0.8) drop-shadow(2px 4px 6px #146666);
+  margin: 10px;
+}
