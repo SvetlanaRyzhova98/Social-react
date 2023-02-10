@@ -1,3 +1,4 @@
+import MyPosts from './MyPosts/MyPosts';
 import './Profile.css'
 
 const Profile = () => {
@@ -16,7 +17,9 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="user__posts"></div>
+        <div className="user__posts">
+          <MyPosts />
+        </div>
       </div>
     );
   };

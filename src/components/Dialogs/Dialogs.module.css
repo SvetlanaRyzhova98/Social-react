@@ -1,0 +1,27 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px 10px;
+  border-radius: 0 15px 15px 0;
+  background:linear-gradient(to left, #0d7076 ,  #3bd3cf, #6ce4e1,#c9f6f5, #cef7f6, transparent);
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dialogsItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dialog a{
+    color: #146666;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.active{
+    text-decoration: underline;
+}

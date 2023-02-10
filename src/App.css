@@ -1,4 +1,4 @@
- 
+@import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600&display=swap');
  
 body{
@@ -14,7 +14,7 @@ a{
   color: rgba(255, 255, 255, 0.829);
 }
 .app-wrapper{
-  max-width: 800px;
+  width: 800px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: 
@@ -24,22 +24,10 @@ a{
   grid-template-columns: 2fr 10fr;
   gap: 20px;
 }
-
-
-.user{
-grid-area: c;
-/* box-shadow: 5px 2px 20px 0px lightslategrey; */
-/* background:linear-gradient(to  left, rgb(54, 220, 215),  transparent); */
+.app-wrapper-content{
+  grid-area: c;
 }
-.user__bg{
-  min-height: 20px;
-  min-width: 40px;
-  width: 100%;
-  height: 100%;
-  background:  url("https://media.baamboozle.com/uploads/images/81615/1610578526_112286"), linear-gradient(to  left, rgb(54, 220, 215),  transparent);
-  background-size: cover;
-  border-radius: 0 15px 0 0;
-  max-height: 200px;}
+
 
 @keyframes App-logo-spin {
   from {

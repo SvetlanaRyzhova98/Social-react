@@ -1,0 +1,20 @@
+ .fild{
+  width: 100%;
+  border: 1px solid #c9b5b575;
+  border-radius: 5px;
+  margin: 10px 0;
+  height: 50px;
+  resize: none;
+  font-size: 18px;
+ }
+ .fild:focus-visible{
+  border: 1px solid #c9b5b575;
+  outline: none;
+ }
+ .button{
+  margin-bottom: 20px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+
+ }
