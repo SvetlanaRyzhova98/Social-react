@@ -4,24 +4,65 @@
   gap: 20px;
   padding: 20px 10px;
   border-radius: 0 15px 15px 0;
+  /* background:linear-gradient(to left, #0d7076 ,  #3bd3cf, #6ce4e1,#c9f6f5, #cef7f6, transparent); */
+}
+.dialogsBox{
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
   background:linear-gradient(to left, #0d7076 ,  #3bd3cf, #6ce4e1,#c9f6f5, #cef7f6, transparent);
+
 }
 .messages {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content:space-around;
 }
 .dialogsItems{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; 
+    
 }
-.dialog a{
-    color: #146666;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
+.dialog{
+  color: #146666;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+align-items: center;
+gap: 10px;
 }
 .active{
-    text-decoration: underline;
+    /* color: red; */
 }
+.avatar{
+  max-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.sendBox{
+  display: grid;
+  grid-template-columns: 5fr 50px;
+  grid-auto-rows: 50px;
+  gap: 10px;
+}
+.sendBtn{
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #146666, #81e8e5);
+
+}
+.sendTextarea:focus-visible{
+  border: 1px solid #c9b5b575;
+  outline: none;
+ }
+.sendTextarea{
+  border-radius: 15px;
+  width: 100%;
+  border: 1px solid #c9b5b575;
+  resize: none;
+  font-size: 18px;
+}
+ 
+

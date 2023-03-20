@@ -12,6 +12,9 @@ const Navbar = () => {
       <NavLink to="/dialogs" className={isActive}>
         Сообщения
       </NavLink>
+      <NavLink to="/friends" className={isActive}>
+        Друзья
+      </NavLink>
       <NavLink to="/news" className={isActive}>
         Новости
       </NavLink>

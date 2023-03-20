@@ -1,0 +1,7 @@
+.friendsBox{
+    background: linear-gradient(to left, transparent, #67e4e1, #60e0dd, transparent);
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  padding: 30px;
+}

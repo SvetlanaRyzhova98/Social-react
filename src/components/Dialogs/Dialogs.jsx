@@ -1,40 +1,38 @@
 import { NavLink } from "react-router-dom";
-import d from "./Dialogs.module.css"
+import DialogItem from "./DialogItem/DialogItem";
+import d from "./Dialogs.module.css";
+import Message from "./Message/Message";
+import React from 'react'   
 
-const DialogItem = (props) => {
-    let path = '/dialogs/' + props.id; 
-    return (
-        <div>
-             <div className={d.dialog + ' ' + d.active}>
-                <NavLink to={path} >{props.name}</NavLink>
-            </div>
-        </div>
-    )
-}
-const Message = (props) => {
-    <div className={d.message}></div>
-}
+
+ 
 
 const Dialogs = (props) => {
-return (
-    <div className={d.dialogs}>
-        <div className={d.dialogsItems
-        }>
-            <DialogItem name='Evgeny' id='1'/>
-            <DialogItem name='Dimych' id='2'/>
-            <DialogItem name='Sveta' id='3'/>
-            <DialogItem name='Rimma' id='4'/>
-            <DialogItem name='Lika' id='5'/>
-            
-        </div>
-        <div className={d.messages}>
-            <div className={d.message}>Да</div>
-            <div className={d.message}>как ты?</div>
-            <div className={d.message}>конечно, он по-другому и не стал бы</div>
-            <div className={d.message}>Завтра давай</div>
-        </div>
-    </div>
-)
+  
+  let dialogsElements = props.dialogs.map((d) => <DialogItem name={d.name} id={d.id} url={d.url}/>  );
+  let messagesElements = props.messages.map((m) => <Message message={m.message} id={m.id} />  );
 
-}
+  let sendMessage = () => {
+    let send = sendText.current.value;
+    alert(send)
+  }
+  let sendText = React.createRef();
+
+  return (
+    <div className={d.dialogsBox}>
+    <div className={d.dialogs}>
+      <div className={d.dialogsItems }>
+       {dialogsElements}
+      </div>
+      <div className={d.messages}>
+        {messagesElements}
+      </div>
+    </div>
+    <div className={d.sendBox}>
+        <textarea ref={sendText} className={d.sendTextarea} name="" id="" cols="30" rows="10"></textarea>
+        <button onClick={sendMessage} className={d.sendBtn}>→</button>
+      </div>
+    </div>
+  );
+};
 export default Dialogs;

@@ -1,7 +1,12 @@
+ .fild__box{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 10fr 1fr;
+ }
  .fild{
   width: 100%;
   border: 1px solid #c9b5b575;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 10px 0;
   height: 50px;
   resize: none;
@@ -12,9 +17,10 @@
   outline: none;
  }
  .button{
-  margin-bottom: 20px;
-  border: none;
-  padding: 5px 20px;
-  border-radius: 5px;
-
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    background: transparent;
+    border: 1px solid #1466665e;
+    color: #146666;
  }

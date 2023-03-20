@@ -1,0 +1,16 @@
+.friendBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  text-align: center;
+  padding: 15px;
+  gap: 15px;
+  font-size: 13px;
+  height: min-content;
+}
+.avatar {
+   width: 79px;
+  height: 79px;
+  border-radius: 50%;
+ 
+}
